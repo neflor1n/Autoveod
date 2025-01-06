@@ -1,0 +1,148 @@
+/* Общие стили для страницы профиля */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для карточки профиля */
+.profile-card {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Шапка профиля */
+.profile-header {
+    display: flex;
+    align-items: center;
+    background-color: #1e1e2f;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Картинка профиля */
+.profile-pic {
+    margin-right: 20px;
+}
+
+/* Информация о профиле */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Заголовок и параграфы */
+.profile-info h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Кнопки */
+.back-btn, .logout-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    background-color: #3b3b5f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover, .logout-btn:hover {
+    background-color: #555;
+}
+
+/* Дополнительные стили */
+.profile-card .profile-header {
+    border-bottom: 2px solid #ccc;
+}
+
+
+/* Общий стиль для таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Убираем промежутки между ячейками */
+    margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Заголовки таблицы */
+th {
+    background-color: #3b3b5f; /* Зеленый фон */
+    color: white;
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Ячейки таблицы */
+td {
+    padding: 10px 15px;
+    text-align: left;
+    border: 1px solid #ddd; /* Светло-серая граница */
+    font-size: 14px;
+}
+
+/* Чередующиеся строки */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Светлый фон для четных строк */
+}
+
+/* Стиль при наведении на строку */
+tr:hover {
+    background-color: #ddd; /* Цвет строки при наведении */
+}
+
+/* Меню для администратора */
+th:last-child,
+td:last-child {
+    width: 120px; /* Ширина столбца для меню */
+    text-align: center;
+}
+
+/* Стиль для кнопок и меню */
+button, a {
+    padding: 6px 12px;
+    background-color: #007BFF; /* Синий цвет */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover, a:hover {
+    background-color: #0056b3; /* Темно-синий цвет при наведении */
+}
+
+/* Выравнивание таблицы по центру */
+table {
+    margin: 0 auto;
+}
+
+/* Мобильная адаптивность */
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}

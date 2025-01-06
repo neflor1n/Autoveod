@@ -1,0 +1,116 @@
+.header {
+    text-align: -webkit-center;
+    background: rgb(36,26,199);
+    background: -moz-linear-gradient(90deg, rgba(36,26,199,1) 0%, rgba(31,31,130,1) 50%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(36,26,199,1) 0%, rgba(31,31,130,1) 50%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(36,26,199,1) 0%, rgba(31,31,130,1) 50%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#241ac7",endColorstr="#00d4ff",GradientType=1);
+    width: 100%;
+    top: 0;
+    color: #fff;
+    left: 0;
+    position: fixed;
+    display: flex;
+    z-index: 1000;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 20px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+
+
+
+/* Общие стили для всей формы */
+form {
+    max-width: 500px;
+    margin: 250px auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовки и метки */
+form label {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+/* Поля ввода */
+form input[type="text"],
+form input[type="date"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Стили для фокуса на input и select */
+form input[type="text"]:focus,
+form input[type="date"]:focus,
+form select:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
+
+/* Дополнительное оформление для обязательных полей */
+form input[required],
+form select[required] {
+    border-color: #ccc;
+}
+
+form input[required]:invalid,
+form select[required]:invalid {
+    border-color: red; /* Красная рамка для неправильных данных */
+}
+
+/* Стиль для метки с подписями */
+form label[for="juht"],
+form label[for="ots"],
+form label[for="autonr"],
+form label[for="algus"],
+form label[for="aeg"]{
+    margin-top: 10px;
+}
+
+/* Применение отступов и улучшение внешнего вида */
+form input[type="text"],
+form input[type="date"],
+form select {
+    font-size: 16px;
+}
+
+/* Улучшение взаимодействия */
+form input[type="text"]:hover,
+form input[type="date"]:hover,
+form select:hover {
+    border-color: #007BFF;
+}
+
+/* Стиль для кнопки */
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #357ABD;
+}
+
